@@ -5,6 +5,18 @@ table, th, td {
 	height: 75px;
 	text-align: center;
 }
+tbody.scrollContent {
+	display: block;
+	overflow: auto;
+	overflow-y: auto;
+	overflow-x: auto;
+	height: 450px;
+	
+}
+thead.fixedHeader {
+	display: block;
+	position: relative;
+}
 tr:nth-child(even) {
 	background-color: #ffea7f; /*yellow*/
 }
