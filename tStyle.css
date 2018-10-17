@@ -2,7 +2,7 @@ table, th, td {
 	border: 1px solid black;
 	border-collapse: collapse;
 	font-size: 0.90em;
-	height: 75px;
+
 	text-align: center;
 }
 tbody.scrollContent {
@@ -10,7 +10,7 @@ tbody.scrollContent {
 	overflow: auto;
 	overflow-y: auto;
 	overflow-x: auto;
-	height: 450px;
+	height: 700px;
 	
 }
 thead.fixedHeader {
@@ -23,9 +23,12 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
 	background-color:#c5e465; /*green*/
 }
-td {
-	width: 300px;
+
+tr,td{
+	height: 75px; 
+
 }
+
 #glsfnf {
 	color: #555fff;
 	font-size: 1.2em;
@@ -34,4 +37,23 @@ td {
 	border: none;
 	column-fill: auto;
 	column-span: all;
+}
+
+ 
+	 
+
+table.a{
+	min-width: 300px; 
+	max-width: 682px; 
+    
+}
+
+	
+}
+table.b {
+	min-width: 100px;
+	max-width: 700px; 
+}
+table.b td{
+	width: 600px;
 }

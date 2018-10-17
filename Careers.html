@@ -38,7 +38,21 @@ Index Page
 
 <li><a href="index.html">HOME</a></li>
 <li><a href="about us.html">About Us</a></li>
-<li><a href="menu.html">Menu</a></li>
+<li class="dropdown">
+<button class="dropdown-btn">Menu &#9660;
+<i class="fa fa-caret-down"></i>
+</button>
+<div class="dropdown-container">
+<a href="menu.html">Menu Page</a>
+<a href="starters, salads, and sides.html">Starters, Salads, Sides</a>
+<a href="burgers and wraps.html">Burgers, Wraps</a>
+<a href="tacos and burritos.html">Tacos, Burritos</a>
+<a href="entree bowls.html">Entree Bowls</a>
+<a href="kids menu.html">Kids Menu</a>
+<a href="desserts.html">Desserts</a>
+<a href="beverages.html">Beverages</a>
+</div>
+</li>
 <li><a href="NutritionalPage.html">Nutritional Page</a></li>
 <li><a href="gallery and social media.html">Gallery/Social Media</a></li>
 <li><a href="Events.html">Events/Specials</a></li>
@@ -51,6 +65,23 @@ Index Page
 
 
 </aside>
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+dropdown[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var dropdownContent = this.nextElementSibling;
+if (dropdownContent.style.display === "block") {
+dropdownContent.style.display = "none";
+} else {
+dropdownContent.style.display = "block";
+}
+});
+}
+</script>
 <main id="content" class="column-right">
 <h1><center>Career Opportunities</center></h1>
 
@@ -63,22 +94,20 @@ Index Page
 
 
 
-
-
-
-
-
-<!--start of CASHEIR JOB section-->
-<h3>Job Duties and Tasks for: "Cashier" 1) Receive payment by cash, check, credit cards, vouchers, or automatic debits. 2) Issue receipts, refunds, credits, or change due to customers. 3) Count money in cash drawers at the beginning of shifts to ensure that amounts are correct and that there is adequate change.</h3>
-<!--end of CASHEIR JOB section-->
-
-<!--start of SERVER section-->
-<h3>Restaurant servers ensure that patrons have an enjoyable dining experience by providing quality customer service. Servers work in the front of the business taking orders, serving food and drinks, and removing dinnerware from the table in a timely manner.</h3>
-<!--end of SERVER section-->
+<!--start of DISH WASHER section-->
+<h3>Dish washer</h3>
+<p>we need a dish washer</p>
+<!--end of DISH WASHER section-->
 
 <!--start of COOK section-->
-<h3>Cook Responsibilities. ... Setting up workstations with all needed ingredients and cooking equipment. Preparing ingredients to use in cooking (chopping and peeling vegetables, cutting meat etc.) Cooking food in various utensils or grillers.</h3>
+<h3>Cook</h3>
+<p>won't somebody cook for us</p>
 <!--end of COOK section-->
+
+<!--start of CASHIER section-->
+<h3>Cashier </h3>
+<p>-$9/hr</p>
+<!--end of CASHIER section-->
 <!--end of CAREERS section-->
 
 <footer class="clear">

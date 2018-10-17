@@ -93,6 +93,43 @@ a.button-reversed {
    
 }
 
+/**Drop_DroP_Button**/
+
+.dropdown-container {
+    display: none;
+    background-color: #383838;
+	border: solid; 
+    padding-left: 8px;
+}
+
+nav#mainnav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+}
+nav#mainnav  .dropdown-btn {
+	text-align: center; 
+    
+    font-size:17px;
+    
+    
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    font-family: "Racing Sans One", garamond, "times new roman", times, serif;
+
+    cursor: pointer;
+    outline: none;
+	color: #ccc;
+	display: block;
+	padding: 7px 17px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+	letter-spacing: 0.5px;
+}
+
+
 /**href-links**/
 a:link.myemail{
     text-decoration: none;
